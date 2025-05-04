@@ -1,0 +1,21 @@
+/* theme.css: Basic retro styling */
+body {
+    font-family: 'Lora', serif;
+    background-color: #F9F5EF;
+    color: #4B3A2B;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #2F3E30;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #C9AC72;
+    text-decoration: none;
+}
