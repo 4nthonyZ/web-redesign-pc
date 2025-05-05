@@ -1,21 +1,237 @@
-/* theme.css: Basic retro styling */
+
 body {
     font-family: 'Lora', serif;
     background-color: #F9F5EF;
     color: #4B3A2B;
     margin: 0;
     padding: 0;
-}
+    position: relative;
+  }
+  
 
-header, footer {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/images/texture-texture-g.jpg');
+    background-repeat: repeat;
+    opacity: 0.90;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+
+  .topbar {
+    background-color: #2F3E30;
+    color: #C9AC72;
+    font-size: 0.9rem;
+  }
+  
+  .topbar .top-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  .topbar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/paper-texture-g.jpg'); 
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .topbar a {
+    color: #C9AC72;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F3E30;
+    padding: 1rem;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #F9F5EF;
+  }
+  
+  .nav-links a {
+    margin: 0 1rem;
+    color: #C9AC72;
+    text-decoration: none;
+  }
+  
+  .nav-icons span {
+    margin-left: 1rem;
+    color: #F9F5EF;
+  }
+  
+  /* Hero Banner */
+  .hero {
+    position: relative;
+    background-image: url('../assets/images/hero-background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 699px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: white; 
+  }
+  
+  
+  
+  .hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .hero-text p {
+    font-family: 'Lora', serif;
+    margin: 1rem 0;
+  }
+  
+  .cta-button {
+    background-color: #C9AC72;
+    color: #2F3E30;
+    padding: 1.25rem 2.5rem; 
+    font-size: 1.2rem;   
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05); 
+  }
+
+
+  .categories {
+    background-color: #F9F5EF;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative; 
+    z-index: 1;
+  }
+  
+
+  .categories::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/paper-texture-y.jpg'); 
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.20;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .categories h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #C9AC72;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  
+  .category-card {
+    background-color: #fff;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 14px;
+    border: 1.5px solid #C9AC72;
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+    color: #4B3A2B;
+    text-align: center;
+    text-decoration: none;
+    width: 240px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+  }
+  
+  .category-card img.category-icon {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    object-fit: contain; 
+    margin-bottom: 1.2rem;
+  }
+  
+  .category-card div {
+    margin-top: auto;
+    font-size: 1.2rem;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  
+  header, footer {
     background-color: #2F3E30;
     color: white;
     padding: 1rem;
     text-align: center;
-}
-
-nav a {
+  }
+  
+  nav a {
     margin: 0 1rem;
     color: #C9AC72;
     text-decoration: none;
-}
+  }
+  footer {
+    position: relative; 
+    z-index: 1;
+  }
+  footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/paper-texture-g.jpg'); 
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+  }
