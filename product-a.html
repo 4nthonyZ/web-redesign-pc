@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Luco Essential Mattress</title>
+  <link rel="stylesheet" href="css/product.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="top-links">
+    <a href="#">About</a>
+    <span>90-days trial</span>
+    <a href="#">FAQs</a>
+    <a href="#">My Orders</a>
+    <a href="#"><img src="assets/images/aus.png" alt="Language" class="icon-img"></a>
+  </div>
+  <nav class="main-nav">
+    <div class="logo">JOE CALVI</div>
+    <div class="nav-links">
+      <a href="#">Home Furniture</a>
+      <a href="#">Bedding</a>
+      <a href="#">Decorations</a>
+    </div>
+    <div class="nav-icons">
+      <a href="#"><img src="assets/images/search.png" alt="Search" class="icon-img"></a>
+      <a href="#"><img src="assets/images/cart.png" alt="Cart" class="icon-img"></a>
+    </div>
+  </nav>
+</header>
+
+<main class="product-detail">
+  <div class="product-gallery">
+    <img id="mainImage" src="assets/images/bedB.png" alt="Main Product" class="main-image" />
+  
+    <div class="thumbnail-row">
+      <img src="assets/images/bedA.png" class="thumb" onclick="changeImage(this)">
+      <img src="assets/images/bedB.png" class="thumb" onclick="changeImage(this)">
+      <img src="assets/images/bedC.png" class="thumb" onclick="changeImage(this)">
+    </div>
+  </div>
+  
+
+  <div class="product-info"> 
+    <h1>Luco Essential Mattress</h1>
+    <div class="price-section">
+      <span class="old-price">$329.00</span>
+      <span class="new-price">$199.00</span>
+      <span class="sale-badge">SALE</span>
+    </div>
+    <p>Enjoy a better night's sleep with this affordable and durable mattress. <br>Available for a limited time only!</p>
+
+    <div class="options">
+      <label>Size</label>
+      <div class="size-options">
+        <button>Single</button>
+        <button class="active">King Single</button>
+        <button>Double</button>
+        <button>King</button>
+      </div>
+    </div>
+
+    <div class="quantity">
+      <label>Quantity</label>
+      <div class="qty-control">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to cart</button>
+    <p class="payment-note">More payment options</p>
+  </div>
+</main>
+
+</body>
+</html>

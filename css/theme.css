@@ -235,3 +235,10 @@ body {
     pointer-events: none;
     z-index: 0;
   }
+  .icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin: 0 5px;
+  }
+  
