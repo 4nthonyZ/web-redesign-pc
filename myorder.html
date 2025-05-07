@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joe Calvi Furniture</title>
+  <title>My Orders - Joe Calvi Furniture</title>
   <link rel="stylesheet" href="css/theme.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Top Navigation -->
+
   <header class="topbar">
     <div class="top-links">
         <a href="about.html">About</a>
@@ -31,36 +31,41 @@
     </nav>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <h2>LOW-KEY, LUXURIOUS AND TRADITIONAL FURNITURE</h2>
-    <a href="browse.html" class="cta-button">SHOP NOW</a>
-  </section>
 
- 
-  <section class="categories">
-    <h3>CATEGORIES</h3>
-    <div class="category-list">
-  
-      <a class="category-card" href="browse.html">
-        <img src="assets/images/bedding.png" alt="Bedding" class="category-icon" />
-        <div>Bedding</div>
-      </a>
-  
-      <a class="category-card" href="home-furniture.html">
-        <img src="assets/images/home-furniture.png" alt="Home Furniture" class="category-icon" />
-        <div>Home Furniture</div>
-      </a>
-  
-      <a class="category-card" href="decorations.html">
-        <img src="assets/images/decorations.png" alt="Decorations" class="category-icon" />
-        <div>Decorations</div>
-      </a>
-  
+  <!-- My Orders Section -->
+  <main style="padding: 2rem;">
+    <h1>My Orders</h1>
+    <p>Below is a summary of your recent orders:</p>
+
+    <div class="order-card" style="border: 1px solid #ccc; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+      <h3>Order #123456789</h3>
+      <p><strong>Date:</strong> April 25, 2025</p>
+      <p><strong>Status:</strong> Shipped</p>
+      <div class="order-item">
+        <img src="assets/images/bedA.png" alt="Bed A">
+        <div>
+          <p><strong>Item:</strong> Bed A</p>
+          <p><strong>Price:</strong> $199</p>
+          <p><strong>Quantity:</strong> 1</p>
+        </div>
+      </div>      
     </div>
-  </section>
-  
-  
+
+      
+    <div class="order-card" style="border: 1px solid #ccc; border-radius: 8px; padding: 1rem;">
+      <h3>Order #987654321</h3>
+      <p><strong>Date:</strong> March 12, 2025</p>
+      <p><strong>Status:</strong> Delivered</p>
+      <div class="order-item">
+        <img src="assets/images/bedC.png" alt="Bed C" >
+        <div>
+          <p><strong>Item:</strong> Bed C</p>
+          <p><strong>Price:</strong> $185</p>
+          <p><strong>Quantity:</strong> 2</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 Joe Calvi. Crafted with care.</p>

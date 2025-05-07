@@ -241,4 +241,39 @@ body {
     object-fit: contain;
     margin: 0 5px;
   }
+  .cta-button.small {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+  
+  /* 在 theme.css 中添加 */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1; /* 主体内容自动填充剩余高度 */
+  }
+  
+  footer {
+    background-color: #244124;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  .order-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .order-item img {
+    width: 120px;
+    border-radius: 4px;
+  }
   
