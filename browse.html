@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="js/main.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Browse Products</title>
@@ -27,7 +28,10 @@
       </div>
       <div class="nav-icons">
         <a href="search.html"><img src="assets/images/search.png" alt="Search" class="icon-img"></a>
-        <a href="cart.html"><img src="assets/images/cart.png" alt="Cart" class="icon-img"></a>
+        <a href="cart.html" class="cart-icon">
+            <img src="assets/images/cart.png" alt="Cart" class="icon-img">
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
       </div>
     </nav>
   </header>
@@ -67,7 +71,7 @@
         </a>
         <h3>Beds A</h3>
         <p>$188</p>
-        <button class="add-cart">ADD TO CART</button>
+        <button class="add-cart" onclick="showCartPopup()">Add to Cart</button>
       </div>
   
       <!-- B -->
@@ -77,7 +81,7 @@
         </a>
         <h3>Beds B</h3>
         <p>$199</p>
-        <button class="add-cart">ADD TO CART</button>
+        <button class="add-cart" onclick="showCartPopup()">Add to Cart</button>
       </div>
   
       <!-- C -->
@@ -87,7 +91,7 @@
         </a>
         <h3>Beds C</h3>
         <p>$211</p>
-        <button class="add-cart">ADD TO CART</button>
+        <button class="add-cart" onclick="showCartPopup()">Add to Cart</button>
       </div>
   
       <!-- Placeholder D ~ I -->

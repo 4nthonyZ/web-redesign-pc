@@ -8,7 +8,7 @@ body {
   /* Topbar styles */
   .topbar {
     background-color: #244124;
-    color: white;
+    color: #C9AC72;
     font-size: 0.9rem;
   }
   
@@ -19,7 +19,7 @@ body {
   }
   
   .top-links a, .main-nav a {
-    color: white;
+    color: #C9AC72;
     text-decoration: none;
     margin: 0 0.5rem;
   }
@@ -46,11 +46,13 @@ body {
   
   /* Main Image */
   .main-image {
-    width: 1200px;
-    height: 600px;
-    object-fit: cover; /* 保证填满区域 */
+    width: 100%;
+    width: 600px;
+    height: 500px; /* 强制高度一致 */
+    object-fit: contain; /* 保证图像完整显示并居中 */
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
-    margin-bottom: 1rem;
   }
   
 
@@ -182,6 +184,47 @@ body {
     height: 20px;
     object-fit: contain;
     margin: 0 5px;
+  }
+  
+  .cart-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1C3421;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+
+  .cart-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;        
+    right: -13px;     
+    background: #C9AC72;
+    color: #1C3421;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 0.6rem; 
+    font-weight: bold;
+    line-height: 1;
+    min-width: 15px;   
+    text-align: center;
   }
   
   
