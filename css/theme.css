@@ -247,7 +247,7 @@ body {
     border-radius: 4px;
   }
   
-  /* 在 theme.css 中添加 */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -256,7 +256,7 @@ html, body {
   }
   
   main {
-    flex: 1; /* 主体内容自动填充剩余高度 */
+    flex: 1; 
   }
   
   footer {
@@ -339,6 +339,7 @@ html, body {
   
   .back-button,
   .checkout-button {
+    margin-top: 1.5rem;
     background-color: #C9AC72;
     color: #1C3421;
     text-decoration: none;
@@ -469,4 +470,16 @@ html, body {
       min-width: 15px;   
       text-align: center;
     }
-    
+    .remove-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+      
+      .remove-icon {
+        width: 24px;
+        height: 24px;
+      }
+      
+      

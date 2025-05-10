@@ -48,8 +48,8 @@ body {
   .main-image {
     width: 100%;
     width: 600px;
-    height: 500px; /* 强制高度一致 */
-    object-fit: contain; /* 保证图像完整显示并居中 */
+    height: 500px; 
+    object-fit: contain; 
     display: block;
     margin: 0 auto;
     border-radius: 8px;
@@ -226,5 +226,4 @@ body {
     min-width: 15px;   
     text-align: center;
   }
-  
   

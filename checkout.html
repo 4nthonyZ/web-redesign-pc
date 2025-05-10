@@ -35,24 +35,27 @@
         </nav>
       </header>
   <div class="checkout-container">
-    <div class="checkout-form">
-      <h2>Checkout</h2>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" placeholder="John Smith">
-
-      <label for="address">Shipping Address:</label>
-      <textarea id="address" placeholder="123 Main St, Melbourne VIC"></textarea>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="you@example.com">
-
-      <label for="payment">Payment Method:</label>
-      <select id="payment">
-        <option>Credit Card</option>
-        <option>PayPal</option>
-        <option>Afterpay</option>
-      </select>
-    </div>
+    <form id="checkout-form" class="checkout-form">
+        <h2>Checkout</h2>
+      
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" placeholder="John Smith" required />
+      
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" placeholder="123 Main St, Melbourne VIC" required></textarea>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment">
+          <option>Credit Card</option>
+          <option>PayPal</option>
+          <option>Afterpay</option>
+        </select>
+        <button type="submit" class="checkout-button">Place Order</button>
+      </form>
+      
 
     <div class="checkout-summary">
       <h3>Order Summary</h3>
@@ -73,9 +76,6 @@
       </div>
 
       <div class="total">Total: $384</div>
-      <div class="place-order-wrap">
-        <a href="confirmation.html" class="place-order-btn">Place Order</a>
-      </div>
     </div>
   </div>
   <footer>

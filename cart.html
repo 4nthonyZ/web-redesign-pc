@@ -40,32 +40,38 @@
         <div class="cart-item">
           <img src="assets/images/bedB.png" alt="Bed B" class="cart-img">
           <div class="cart-details">
-            <h2>Luco Essential Mattress</h2>
-            <p><strong>Price:</strong> $199</p>
+            <p><strong>Luco Essential Mattress</strong></p>
+            <p class="item-price" data-price="199">$199</p>
             <div class="cart-quantity">
-              <label>Quantity:</label>
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
+                <label>Quantity:</label>
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+              </div>
+            <button class="remove-btn">
+                <img src="assets/images/delete.png" alt="Remove" class="remove-icon">
+              </button>
           </div>
         </div>
       
         <div class="cart-item">
           <img src="assets/images/bedC.png" alt="Bed C" class="cart-img">
           <div class="cart-details">
-            <h2>CloudWood Bedframe</h2>
-            <p><strong>Price:</strong> $185</p>
+            <p><strong>CloudWood Bedframe</strong></p>
+            <p class="item-price" data-price="188">$199</p>
             <div class="cart-quantity">
-              <label>Quantity:</label>
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
+                <label>Quantity:</label>
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+              </div>
+            <button class="remove-btn">
+                <img src="assets/images/delete.png" alt="Remove" class="remove-icon">
+              </button>
           </div>
         </div>
         <div class="cart-summary">
-            <p><strong>Total:</strong> $384</p>
+            Total: $<span id="total-price">185</span>
             <div class="cart-actions">
               <a href="browse.html" class="back-button">← Continue Shopping</a>
               <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
