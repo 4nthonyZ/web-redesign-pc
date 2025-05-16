@@ -22,14 +22,16 @@
     border-bottom: 1px solid #C9AC72;
     padding-bottom: 0.5rem;
   }
-  
+
   .category-search {
-    width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0 1rem 0;
-    border-radius: 4px;
-    border: none;
-  }
+  display: block;
+  margin: 0 auto 1rem auto; 
+  padding: 0.5rem;
+  width: 80%; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
   
   .category-list {
     list-style: none;
@@ -155,3 +157,20 @@
     90% { opacity: 1; }
     100% { opacity: 0; transform: translateY(-10px); }
   }
+
+  .price-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  margin: 1rem 0;
+}
+
+.price-slider input[type="range"] {
+  width: 80%;           
+  margin-bottom: 0.5rem;
+}
+
+.price-slider p {
+  color: #f4e3c1;       
+  font-size: 0.9rem;
+}

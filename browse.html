@@ -22,16 +22,16 @@
     <nav class="main-nav">
         <a href="index.html" class="logo">JOE CALVI</a>
       <div class="nav-links">
-        <a href="#">Home Furniture</a>
+        <a href="browse.html">Home Furniture</a>
         <a href="browse.html">Bedding</a>
-        <a href="#">Decorations</a>
+        <a href="browse.html">Decorations</a>
       </div>
       <div class="nav-icons">
         <a href="search.html"><img src="assets/images/search.png" alt="Search" class="icon-img"></a>
         <a href="cart.html" class="cart-icon">
-            <img src="assets/images/cart.png" alt="Cart" class="icon-img">
-            <span id="cart-count" class="cart-count">0</span>
-          </a>
+          <img src="assets/images/cart.png" alt="Cart" class="icon-img">
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
       </div>
     </nav>
   </header>
@@ -41,7 +41,8 @@
     <aside class="sidebar">
       <h3>Filter by Price</h3>
       <div class="price-slider">
-        Price: $1,440 – $5,490
+        <input type="range" min="500" max="2000" value="800" />
+        <p>$500 – $1200</p>
       </div>
 
       <h4>Product Category</h4>
@@ -95,29 +96,15 @@
       </div>
   
 
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds D" /><h3>Beds D</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds E" /><h3>Beds E</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds F" /><h3>Beds F</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds G" /><h3>Beds G</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds H" /><h3>Beds H</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds I" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds J" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds K" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds L" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds M" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds N" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds O" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds P" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds Q" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds R" /><h3>Beds D</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds S" /><h3>Beds E</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds T" /><h3>Beds F</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds U" /><h3>Beds G</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds V" /><h3>Beds H</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds W" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds X" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds Y" /><h3>Beds I</h3></div>
-      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds Z" /><h3>Beds I</h3></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds D" /><h3>Beds D</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds E" /><h3>Beds E</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds F" /><h3>Beds F</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds G" /><h3>Beds G</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds H" /><h3>Beds H</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds I" /><h3>Beds I</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds J" /><h3>Beds J</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds K" /><h3>Beds K</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
+      <div class="product-card"><img src="assets/images/placeholder.png" alt="Beds L" /><h3>Beds I</h3><button class="add-cart" onclick="showCartPopup()">Add to Cart</button></div>
     </div>
   </section> 
   </main>
